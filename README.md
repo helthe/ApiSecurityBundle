@@ -1,4 +1,4 @@
-# Helthe Api Security Bundle
+# Helthe Api Security Bundle [![Build Status](https://travis-ci.org/helthe/ApiSecurityBundle.png?branch=master)](https://travis-ci.org/helthe/ApiSecurityBundle) [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/helthe/ApiSecurityBundle/badges/quality-score.png?s=eb5e74ae4910186635f08c19f04b3a90f0802747)](https://scrutinizer-ci.com/g/helthe/ApiSecurityBundle/)
 
 Helthe Api Security Bundle integrates the [Helthe API Security Component](https://github.com/helthe/ApiSecurity)
 with your Symfony2 application.
