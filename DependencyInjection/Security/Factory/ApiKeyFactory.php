@@ -29,14 +29,14 @@ class ApiKeyFactory implements SecurityFactoryInterface
      */
     public function create(ContainerBuilder $container, $id, $config, $userProvider, $defaultEntryPoint)
     {
-        $providerId = 'helthe_api_security.security.authentication.provider.'.$id;
+        $providerId = 'helthe_api_security.security.authentication.provider.'. $id;
         $container
             ->setDefinition($providerId, new DefinitionDecorator('helthe_api_security.security.authentication.provider'))
             ->replaceArgument(0, new Reference($userProvider))
             ->replaceArgument(2, $id)
         ;
 
-        $listenerId = 'helthe_api_security.security.authentication.listener.' . $config['method'] . '.' .$id;
+        $listenerId = 'helthe_api_security.security.authentication.listener.' . $config['method'] . '.' . $id;
         $listener = $container->setDefinition($listenerId, new DefinitionDecorator('helthe_api_security.security.authentication.listener.' . $config['method']));
         $listener->replaceArgument(2, $id);
         $listener->replaceArgument(3, $config['name']);
